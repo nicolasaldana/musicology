@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #2C2C2C;
+    padding: 10px 50px;
+    align-items: center;
+}
+
+.image{
+    height: 30px;
+}
+
+.principal {
+    background-image: url(../assets/images/background.png);
+    background-size: cover;         
+    background-position: center;                                                              
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 800px;
+}
+
+.contenido{
+    width: 700px;
+    margin-left: 100px;
+
+}
+
+.contenido h1{
+    font-size: 100px;
+    font-weight: lighter;
+    padding-bottom: 20px;
+
+}
+
+.contenido p {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.contenido button{
+    background-color: #FF6309;
+    padding: 20px 90px ;
+    color: white;
+    border: none;
+    font-size: 30px;
+    border-radius: 5px;
+}
+
+.naranja{
+    background-color: #FF6309;
+}
+
+.titulo{
+    color: white;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 90px;
+    margin-bottom: 100px;
+}
+
+.titulo h2{
+    font-size: 70px;
+}
+
+.titulo p{
+    font-size: 25px;
+    padding-inline: 300px;
+    text-align: center;
+}
+
+.tour{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+    flex-wrap: wrap;    
+}
+
+.tour-card{
+    background-color: #2C2C2C;
+    width: 373px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    
+
+}
+
+.tour-card h3{
+    font-size: 30px;
+    font-weight: lighter;
+    padding-block: 20px;
+}
+
+.tour-card p{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.pricing{
+    background-color: #2C2C2C;
+}
+
+.pricing-box{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 60px;
+    flex-wrap: wrap;   
+}
+
+.pricing-card{
+    background-color: #FF6309;
+    width: 373px;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.pricing-card img{
+    padding-top: 30px;
+}
+
+.pricing-card h3{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.pricing-card p{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+
+.pricing-card button{
+    padding: 10px 100px;
+    background-color: #2C2C2C;
+    color: white;
+    font-size:20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.footer{
+    background-color: #FF6309;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    font-size: 20px;
+}
+
+@media(max-width:1279px){
+    .titulo p{
+        padding-inline: 20px;
+    }
+
+    .tour{
+        gap: 10px;
+    }
+
+    .pricing-box{
+        gap: 10px;
+    }
+}
+
+@media(max-width:768px){
+    .contenido{
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .contenido h1{
+        font-size: 50px;
+    }
+}
+
+@media (max-width:480px){
+    .contenido button{
+        padding: 20px 80px;
+        font-size: 20px;
+    }
+
+    .tour-card{
+        width: 300px;
+    }
+
+    .tour-card img {
+        width: 300px;
+    }
+
+    .titulo{
+        text-align: center;
+    }
+
+    .footer{
+        font-size: 17px;
+        padding: 10px;
+    }
+}
